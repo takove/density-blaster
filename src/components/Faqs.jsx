@@ -5,55 +5,39 @@ import { Container } from '@/components/Container'
 const faqs = [
   [
     {
-      question: 'How do I know the tips are good?',
+      question: 'Can you send me a sample?',
       answer:
-        'Our whole business depends on our tips being good, so it’s in our best interest that they are. The results of our customers speak for themselves, just trust us.',
+        'Because Mailjoy is self-service and so simple to use, we don’t send samples. Sign up for Mailjoy for free and create a sample campaign to send to yourself in a matter of minutes. Yes, it’s really that easy!',
     },
     {
-      question: 'Isn’t this insider trading?',
+      question: 'What’s the difference between postcards and letters?',
       answer:
-        'Yes exactly. But at scale! Historically you could only make insider trades with knowledge from your direct network. Pocket brings you insider trading tips from people you don’t even know.',
+        'Postcards are our most affordable mailer type and are perfect for marketing as their message is immediately visible. Letters are our newest mailer type. They come stuffed inside of an envelope.',
     },
     {
-      question: 'But isn’t insider trading illegal?',
+      question: 'How do you compare to a traditional print shop?',
       answer:
-        'Here’s the thing: you’re the one doing the insider trading, not us. We’re just giving you the tips and some tools to make trades. We’re not doing anything wrong here.',
+        'We’re the exact opposite of a traditional print shop. We’re built for modern marketers who want a powerful self-service tool to create, manage, and track your direct mail. Mailjoy also integrates with your other marketing tools and offers simple on-demand pricing.'        
     },
   ],
   [
     {
-      question: 'Do the people giving you tips realize what they are doing?',
+      question: 'How does pricing work?',
       answer:
-        'Again I would argue this isn’t really our responsibility. People make their own choices. If they don’t research the consequences that’s on them, not on us.',
+        'No mystery pricing that requires a quote. No design fees. No list cleanup fees. No setup fees. You only pay for each postcard you send (print, first-class postage, and tracking included). You may also choose to upgrade to a credit plan which includes a monthly allocation of discounted mailer credits.',
     },
     {
-      question: 'Where is Pocket based?',
+      question: 'So your templates and design software are free?',
       answer:
-        'Let’s just say it’s not somewhere where the SEC is going to find us.',
+        'Yes! The Mailjoy platform and all of its functionality are free to use. We only charge you per mailer when you’re ready to send off a campaign.',
     },
     {
-      question: 'Is there any age limit to trading on Pocket?',
+      question: 'Do you have enterprise pricing?',
       answer:
-        'For our free plan, the age limit is based on the minimum age to trade in your country of residence. Our VIP plan uses advanced transaction anonymization though, so you can use that plan even if you’re 9 years old. Or a dog.',
+        'For companies who send a lot of mail or have large mailing lists to sync with Mailjoy, we offer enterprise plans which feature lower mailer costs, more functionality, and an API. Please contact us to learn more.',
     },
   ],
-  [
-    {
-      question: 'How did you get this on the App Store?',
-      answer:
-        'Honestly we were surprised too, but eventually we found out that the app reviewer found the app so compelling they approved it just so they could use it themselves.',
-    },
-    {
-      question: 'How do I explain the money I withdraw from Pocket to the IRS?',
-      answer:
-        'This feels like one-hundred percent a you problem. Pocket is not responsible in any way for your tax returns.',
-    },
-    {
-      question: 'How do I become an insider?',
-      answer:
-        'Contact us with some details about your industry and the type of access you have to apply for an insider account. Once approved, we’ll send you a guide on collecting insider information without being detected at work.',
-    },
-  ],
+  
 ]
 
 export function Faqs() {
@@ -69,7 +53,7 @@ export function Faqs() {
             id="faqs-title"
             className="text-3xl font-medium tracking-tight text-gray-900"
           >
-            Frequently asked questions
+            Commonly asked questions
           </h2>
           <p className="mt-2 text-lg text-gray-600">
             If you have anything else you want to ask,{' '}
@@ -84,7 +68,7 @@ export function Faqs() {
         </div>
         <ul
           role="list"
-          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:mt-20 lg:max-w-none lg:grid-cols-3"
+          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:mt-20 lg:max-w-none lg:grid-cols-2"
         >
           {faqs.map((column, columnIndex) => (
             <li key={columnIndex}>
